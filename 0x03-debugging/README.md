@@ -1,1 +1,1 @@
-C - Debugging Projects
+0x03-debugging project
