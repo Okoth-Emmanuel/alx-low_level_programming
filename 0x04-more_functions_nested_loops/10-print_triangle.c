@@ -1,15 +1,28 @@
 #include "main.h"
-
 /**
- * _isdigit - check if numbers are 0 - 9
- * @c: char to be checked
- *
- * Return: 0 or 1
- */
-int _isdigit(int c)
+* print_triangle - prints a triangle, followed by a new line
+* @size: size of the triangle
+*/
+void print_triangle(int size)
 {
-if (c >= '0' && c <= '9')
-return (1);
-else
-return (0);
+if (size <= 0)
+{
+_putchar('\n');
 }
+else
+{
+int i, j;
+for (i = 1; i <= size; i++)
+{
+for (j = i; j < size; j++)
+{
+_putchar(' ');
+}
+for (j = 1; j <= i; j++)
+{
+_putchar('#');
+}
+_putchar('\n');
+}
+}
+}}
